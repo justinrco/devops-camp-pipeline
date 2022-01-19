@@ -5,7 +5,7 @@ pipeline {
     stages {
         stage('Application repository') {
             steps {
-                echo "Cloning application repository"
+                echo "Cloning application repository again"
                 sh 'git clone https://github.com/justinrco/afs-labs-student.git'
             }
         }
