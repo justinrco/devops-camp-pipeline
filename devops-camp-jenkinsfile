@@ -35,7 +35,7 @@ pipeline {
             }
             post {
                 always {
-                    echo "Clean local $APP_IMAGE_NAME imag"
+                    echo "Clean local $APP_IMAGE_NAME image"
                     script {
                         try {
                             sh 'docker rmi $APP_IMAGE_NAME-$COMMIT_HASH:latest'
